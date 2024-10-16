@@ -1,9 +1,12 @@
 import { Html, Head, Main, NextScript } from 'next/document'
+import ExternalCss from './external_css.js'
  
 export default function Document() {
   return (
     <Html>
-      <Head />
+      <Head>
+        <ExternalCss />
+      </Head>
       <body>
         <Main />
         <NextScript />
