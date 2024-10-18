@@ -14,7 +14,7 @@ export default function footer() {
                     <button className="country-selector-toggle country-control-close" data-bs-toggle="open" data-bs-target="#country-selector" aria-expanded="false" aria-label="Close country selector"></button>
                     <ul className="countries" aria-label="Worldwide site list">
                     <li className="international">
-                        <a href="https://www.greenpeace.org/international/">Greenpeace International</a>
+                        <a href="/">Greenpeace International</a>
                     </li>
                     <li className="country-group">
                         <span className="initial">A</span>
@@ -366,7 +366,7 @@ export default function footer() {
                     <li>
                     <a href="https://www.instagram.com/greenpeace/" data-ga-category="Footer Navigation" data-ga-action="Social Icons" data-ga-label="Instagram" rel="me">
                         <svg viewBox="0 0 32 32" className="icon">
-                        <use href="https://www.greenpeace.org/international/wp-content/themes/planet4-master-theme/assets/build/sprite.symbol.svg#instagram"></use>
+                        <use href="/wp-content/themes/planet4-master-theme/assets/build/sprite.symbol.svg#instagram"></use>
                         </svg>
                         <span className="visually-hidden">Instagram</span>
                     </a>
@@ -374,7 +374,7 @@ export default function footer() {
                     <li>
                     <a href="https://x.com/greenpeace" data-ga-category="Footer Navigation" data-ga-action="Social Icons" data-ga-label="Twitter" rel="me">
                         <svg viewBox="0 0 32 32" className="icon">
-                        <use href="https://www.greenpeace.org/international/wp-content/themes/planet4-master-theme/assets/build/sprite.symbol.svg#twitter"></use>
+                        <use href="/wp-content/themes/planet4-master-theme/assets/build/sprite.symbol.svg#twitter"></use>
                         </svg>
                         <span className="visually-hidden">Twitter</span>
                     </a>
@@ -382,7 +382,7 @@ export default function footer() {
                     <li>
                     <a href="https://www.tiktok.com/@greenpeace_international" data-ga-category="Footer Navigation" data-ga-action="Social Icons" data-ga-label="TikTok" rel="me">
                         <svg viewBox="0 0 32 32" className="icon">
-                        <use href="https://www.greenpeace.org/international/wp-content/themes/planet4-master-theme/assets/build/sprite.symbol.svg#tiktok"></use>
+                        <use href="/wp-content/themes/planet4-master-theme/assets/build/sprite.symbol.svg#tiktok"></use>
                         </svg>
                         <span className="visually-hidden">TikTok</span>
                     </a>
@@ -390,7 +390,7 @@ export default function footer() {
                     <li>
                     <a href="https://www.youtube.com/greenpeace" data-ga-category="Footer Navigation" data-ga-action="Social Icons" data-ga-label="Youtube" rel="me">
                         <svg viewBox="0 0 32 32" className="icon">
-                        <use href="https://www.greenpeace.org/international/wp-content/themes/planet4-master-theme/assets/build/sprite.symbol.svg#youtube"></use>
+                        <use href="/wp-content/themes/planet4-master-theme/assets/build/sprite.symbol.svg#youtube"></use>
                         </svg>
                         <span className="visually-hidden">Youtube</span>
                     </a>
@@ -398,7 +398,7 @@ export default function footer() {
                     <li>
                     <a href="https://www.linkedin.com/company/greenpeace-international/jobs/" data-ga-category="Footer Navigation" data-ga-action="Social Icons" data-ga-label="Linkedin" rel="me">
                         <svg viewBox="0 0 32 32" className="icon">
-                        <use href="https://www.greenpeace.org/international/wp-content/themes/planet4-master-theme/assets/build/sprite.symbol.svg#linkedin"></use>
+                        <use href="/wp-content/themes/planet4-master-theme/assets/build/sprite.symbol.svg#linkedin"></use>
                         </svg>
                         <span className="visually-hidden">Linkedin</span>
                     </a>
@@ -406,15 +406,15 @@ export default function footer() {
                     <li>
                     <a href="https://www.facebook.com/greenpeace.international" data-ga-category="Footer Navigation" data-ga-action="Social Icons" data-ga-label="Facebook" rel="me">
                         <svg viewBox="0 0 32 32" className="icon">
-                        <use href="https://www.greenpeace.org/international/wp-content/themes/planet4-master-theme/assets/build/sprite.symbol.svg#facebook-square"></use>
+                        <use href="/wp-content/themes/planet4-master-theme/assets/build/sprite.symbol.svg#facebook-square"></use>
                         </svg>
                         <span className="visually-hidden">Facebook</span>
                     </a>
                     </li>
                     <li>
-                    <a href="https://www.greenpeace.org/international/feed/" data-ga-category="Footer Navigation" data-ga-action="Social Icons" data-ga-label="RSS" rel="me">
+                    <a href="/feed/" data-ga-category="Footer Navigation" data-ga-action="Social Icons" data-ga-label="RSS" rel="me">
                         <svg viewBox="0 0 32 32" className="icon">
-                        <use href="https://www.greenpeace.org/international/wp-content/themes/planet4-master-theme/assets/build/sprite.symbol.svg#rss"></use>
+                        <use href="/wp-content/themes/planet4-master-theme/assets/build/sprite.symbol.svg#rss"></use>
                         </svg>
                         <span className="visually-hidden">RSS</span>
                     </a>
@@ -422,7 +422,7 @@ export default function footer() {
                     <li>
                     <a href="https://github.com/greenpeace/planet4" data-ga-category="Footer Navigation" data-ga-action="Social Icons" data-ga-label="Github" rel="me">
                         <svg viewBox="0 0 32 32" className="icon">
-                        <use href="https://www.greenpeace.org/international/wp-content/themes/planet4-master-theme/assets/build/sprite.symbol.svg#github"></use>
+                        <use href="/wp-content/themes/planet4-master-theme/assets/build/sprite.symbol.svg#github"></use>
                         </svg>
                         <span className="visually-hidden">Github</span>
                     </a>
@@ -432,34 +432,34 @@ export default function footer() {
                 <nav className="footer-menu">
                 <ul className="list-unstyled">
                     <li>
-                    <a href="https://www.greenpeace.org/international/about/" target="" data-ga-category="Footer Navigation" data-ga-action="Footer Links" data-ga-label="About us"> About us </a>
+                    <a href="/about/" target="" data-ga-category="Footer Navigation" data-ga-action="Footer Links" data-ga-label="About us"> About us </a>
                     </li>
                     <li>
-                    <a href="https://www.greenpeace.org/international/about/worldwide/" target="" data-ga-category="Footer Navigation" data-ga-action="Footer Links" data-ga-label="Contact us"> Contact us </a>
+                    <a href="/about/worldwide/" target="" data-ga-category="Footer Navigation" data-ga-action="Footer Links" data-ga-label="Contact us"> Contact us </a>
                     </li>
                     <li>
-                    <a href="https://www.greenpeace.org/international/join/jobs/" target="" data-ga-category="Footer Navigation" data-ga-action="Footer Links" data-ga-label="Jobs"> Jobs </a>
+                    <a href="/join/jobs/" target="" data-ga-category="Footer Navigation" data-ga-action="Footer Links" data-ga-label="Jobs"> Jobs </a>
                     </li>
                     <li>
-                    <a href="https://www.greenpeace.org/international/about/values/" target="" data-ga-category="Footer Navigation" data-ga-action="Footer Links" data-ga-label="Our values"> Our values </a>
+                    <a href="/about/values/" target="" data-ga-category="Footer Navigation" data-ga-action="Footer Links" data-ga-label="Our values"> Our values </a>
                     </li>
                     <li>
-                    <a href="https://www.greenpeace.org/international/press-centre/" target="" data-ga-category="Footer Navigation" data-ga-action="Footer Links" data-ga-label="Press centre"> Press centre </a>
+                    <a href="/press-centre/" target="" data-ga-category="Footer Navigation" data-ga-action="Footer Links" data-ga-label="Press centre"> Press centre </a>
                     </li>
                     <li>
-                    <a href="https://www.greenpeace.org/international/community-policy/" target="" data-ga-category="Footer Navigation" data-ga-action="Footer Links" data-ga-label="Community Policy"> Community Policy </a>
+                    <a href="/community-policy/" target="" data-ga-category="Footer Navigation" data-ga-action="Footer Links" data-ga-label="Community Policy"> Community Policy </a>
                     </li>
                     <li>
-                    <a href="https://www.greenpeace.org/international/copyright/" target="" data-ga-category="Footer Navigation" data-ga-action="Footer Links" data-ga-label="Copyright"> Copyright </a>
+                    <a href="/copyright/" target="" data-ga-category="Footer Navigation" data-ga-action="Footer Links" data-ga-label="Copyright"> Copyright </a>
                     </li>
                     <li>
-                    <a href="https://www.greenpeace.org/international/privacy/" target="" data-ga-category="Footer Navigation" data-ga-action="Footer Links" data-ga-label="Privacy and cookies"> Privacy and cookies </a>
+                    <a href="/privacy/" target="" data-ga-category="Footer Navigation" data-ga-action="Footer Links" data-ga-label="Privacy and cookies"> Privacy and cookies </a>
                     </li>
                     <li>
                     <a href="https://archive-it.org/organizations/1342" target="" data-ga-category="Footer Navigation" data-ga-action="Footer Links" data-ga-label="Search the archive"> Search the archive </a>
                     </li>
                     <li>
-                    <a href="https://www.greenpeace.org/international/terms/" target="" data-ga-category="Footer Navigation" data-ga-action="Footer Links" data-ga-label="Terms"> Terms </a>
+                    <a href="/terms/" target="" data-ga-category="Footer Navigation" data-ga-action="Footer Links" data-ga-label="Terms"> Terms </a>
                     </li>
                 </ul>
                 </nav>
@@ -468,9 +468,9 @@ export default function footer() {
                 <div className="container d-flex flex-column flex-xl-row">
                 <span role="text">
                     <svg viewBox="0 0 32 32" className="icon">
-                    <use href="https://www.greenpeace.org/international/wp-content/themes/planet4-master-theme/assets/build/sprite.symbol.svg#creative-commons"></use>
+                    <use href="/wp-content/themes/planet4-master-theme/assets/build/sprite.symbol.svg#creative-commons"></use>
                     </svg> Greenpeace International 2024 </span>
-                <span role="text"> Unless <a href="https://www.greenpeace.org/international/copyright/">otherwise stated</a>, the copy of the website is licensed under a <a href="https://creativecommons.org/licenses/by/2.0/">CC-BY International License</a>
+                <span role="text"> Unless <a href="/copyright/">otherwise stated</a>, the copy of the website is licensed under a <a href="https://creativecommons.org/licenses/by/2.0/">CC-BY International License</a>
                 </span>
                 </div>
             </div>

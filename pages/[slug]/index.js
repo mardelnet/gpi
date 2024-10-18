@@ -37,12 +37,6 @@ export default function Page({ repo }) {
     }, [repo]);
 
     return (
-        <div>
-            {htmlContent ? (
-                <div dangerouslySetInnerHTML={{ __html: htmlContent }} />
-            ) : (
-                <p>Loading content...</p> // Optional: Loading state
-            )}
-        </div>
+        <div dangerouslySetInnerHTML={{ __html: htmlContent }} />
     );
 }

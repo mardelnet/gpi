@@ -1,6 +1,7 @@
 import { Html, Head, Main, NextScript } from 'next/document'
-import ExternalCss from '../functions/external_css'
-import ExternalJs from '../functions/external_js'
+import ExternalCss from '../components/external_css'
+import HeaderJs from '../components/HeaderJs'
+import FooterJs from '../components/FooterJs'
 import TopNavBar from '../components/top_navbar'
 import Footer from '../components/footer'
  
@@ -9,13 +10,16 @@ export default function Document() {
     <Html>
       <Head>
         <ExternalCss />
-        <ExternalJs />
+        <HeaderJs />
         <TopNavBar />
       </Head>
       <body>
-        <Main />
+        <div className='container'>
+          <Main />
+        </div>
         <NextScript />
         <Footer />
+        <FooterJs />
       </body>
     </Html>
   )
