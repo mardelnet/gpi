@@ -1,4 +1,4 @@
-export default function footer() {
+export default function FooterHtml() {
     return(
         <footer id="footer" className="site-footer site-footer--">
             <div id="country-selector" className="footer-country-selector">

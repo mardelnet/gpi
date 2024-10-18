@@ -1,4 +1,4 @@
-export default function TopNavBar() {
+export default function TopNavbarHtml() {
     return(
         <header id="header" className="top-navigation navbar with-mobile-tabs">
             <button className="nav-menu-toggle" type="button" aria-label="Toggle navigation menu" data-ga-category="Menu Navigation" data-ga-action="Open Menu" data-ga-label="Homepage" aria-expanded="false" data-bs-toggle="open" data-bs-target="#nav-main">
