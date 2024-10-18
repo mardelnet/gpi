@@ -1,16 +1,17 @@
-import { fetchPageData } from '../../../functions/fetchPageData';
+import {BASE_URL, API_BASE_URL} from '../../../utils/constants';
+import { fetchPageData } from '../../../utils/fetchPageData';
 import HtmlContentRenderer from '../../../components/HtmlContentRenderer';
 
 // Fetch both slugs and child_slugs (nested paths)
 export async function getStaticPaths() {
-    const res = await fetch('https://www.greenpeace.org/international/wp-json/wp/v2/pages');
+    const res = await fetch(API_BASE_URL);
     const pages = await res.json();
 
     const paths = pages.map(page => {
         // For simplicity, this assumes that child pages have slashes in their "link" attribute
         // Example: '/explore/energy'
         const parts = page.link
-            .replace('https://www.greenpeace.org/international/', '') // Remove base URL
+            .replace(BASE_URL, '') // Remove base URL
             .split('/')
             .filter(Boolean); // Remove empty parts caused by trailing slashes
 

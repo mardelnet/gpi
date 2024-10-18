@@ -1,8 +1,9 @@
-import { fetchPageData } from '../../functions/fetchPageData';
+import {API_BASE_URL} from '../../utils/constants';
+import { fetchPageData } from '../../utils/fetchPageData';
 import HtmlContentRenderer from '../../components/HtmlContentRenderer';
 
 export async function getStaticPaths() {
-    const res = await fetch('https://www.greenpeace.org/international/wp-json/wp/v2/pages');
+    const res = await fetch(API_BASE_URL);
     const pages = await res.json();
 
     const paths = pages.map(page => ({

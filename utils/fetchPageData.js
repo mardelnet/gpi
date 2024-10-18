@@ -1,5 +1,7 @@
+import {API_BASE_URL} from '../utils/constants';
+
 export const fetchPageData = async (slug = 'home') => {
-    const res = await fetch(`https://www.greenpeace.org/international/wp-json/wp/v2/pages?slug=${slug}`);
+    const res = await fetch(`${API_BASE_URL}?slug=${slug}`);
     const repo = await res.json();
 
     // Check if the repo is empty and return null if it is

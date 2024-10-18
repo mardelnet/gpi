@@ -1,7 +1,7 @@
-const BASE_URL = "https://www.greenpeace.org/international";
-const THEME_URL = `${BASE_URL}/wp-content/themes/planet4-master-theme/assets/build`;
-const PLUGIN_URL = `${BASE_URL}/wp-content/plugins/planet4-plugin-gutenberg-blocks/assets/build`;
-const GRAVITYFORMS_URL = `${BASE_URL}/wp-content/plugins/gravityforms/assets/css/dist`;
+import {BASE_URL, MAIN_THEME_URL, P4_PLUGIN_URL, GRAVITYFORMS_CSS_URL} from '../utils/constants';
+
+const THEME_URL = `${MAIN_THEME_URL}/assets/build`;
+const PLUGIN_URL = `${P4_PLUGIN_URL}/assets/build`;
 const ELASTICPRESS_URL = `${BASE_URL}/wp-content/plugins/elasticpress/dist/css`;
 const CHILD_THEME_URL = `${BASE_URL}/wp-content/themes/planet4-child-theme-international`;
 
@@ -16,10 +16,10 @@ const STYLES = [
   { id: "planet4-blocks/gallery-style-css", href: `${THEME_URL}/GalleryStyle.min.css` },
   { id: "planet4-blocks/articles-style-css", href: `${PLUGIN_URL}/ArticlesStyle.min.css` },
   { id: "planet4-blocks/covers-style-css", href: `${PLUGIN_URL}/CoversStyle.min.css` },
-  { id: "gform_basic-css", href: `${GRAVITYFORMS_URL}/basic.min.css` },
-  { id: "gform_theme_components-css", href: `${GRAVITYFORMS_URL}/theme-components.min.css` },
-  { id: "gform_theme_ie11-css", href: `${GRAVITYFORMS_URL}/theme-ie11.min.css` },
-  { id: "gform_theme-css", href: `${GRAVITYFORMS_URL}/theme.min.css` },
+  { id: "gform_basic-css", href: `${GRAVITYFORMS_CSS_URL}/basic.min.css` },
+  { id: "gform_theme_components-css", href: `${GRAVITYFORMS_CSS_URL}/theme-components.min.css` },
+  { id: "gform_theme_ie11-css", href: `${GRAVITYFORMS_CSS_URL}/theme-ie11.min.css` },
+  { id: "gform_theme-css", href: `${GRAVITYFORMS_CSS_URL}/theme.min.css` },
   { id: "child-style-css", href: `${CHILD_THEME_URL}/style.css` },
   { href: `${PLUGIN_URL}/lightbox.min.css`, media: "print", onLoad: "this.media='all'" },
 ];

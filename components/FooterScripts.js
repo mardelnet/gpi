@@ -1,6 +1,6 @@
-const BASE_URL = "https://www.greenpeace.org/international";
+import {BASE_URL, GRAVITYFORMS_JS_URL} from '../utils/constants';
+
 const WP_INCLUDES_URL = `${BASE_URL}/wp-includes`;
-const GRAVITYFORMS_URL = `${BASE_URL}/wp-content/plugins/gravityforms/assets/js/dist`;
 const CLOUDFLARE_URL = 'https://cdnjs.cloudflare.com/ajax/libs';
 
 const SCRIPTS = [
@@ -15,12 +15,12 @@ const SCRIPTS = [
     { src: `${WP_INCLUDES_URL}/js/dist/i18n.min.js`, id: "wp-i18n-js" },
     { src: `${WP_INCLUDES_URL}/js/dist/dom-ready.min.js`, id: "wp-dom-ready-js" },
     { src: `${WP_INCLUDES_URL}/js/dist/a11y.min.js`, id: "wp-a11y-js" },
-    { src: `${GRAVITYFORMS_URL}/gravityforms.min.js`, id: "gform_gravityforms-js", defer: true },
-    { src: `${GRAVITYFORMS_URL}/vendor-theme.min.js`, id: "gform_gravityforms_theme_vendors-js", defer: true },
-    { src: `${GRAVITYFORMS_URL}/scripts-theme.min.js`, id: "gform_gravityforms_theme-js", defer: true },
-    { src: `${GRAVITYFORMS_URL}/placeholders.jquery.min.js`, id: "gform_placeholder-js", defer: true },
-    { src: `${GRAVITYFORMS_URL}/vendor-theme.min.js`, id: "gform_gravityforms_theme_vendors-js", defer: true },
-    { src: `${GRAVITYFORMS_URL}/scripts-theme.min.js`, id: "gform_gravityforms_theme-js", defer: true },
+    { src: `${GRAVITYFORMS_JS_URL}/gravityforms.min.js`, id: "gform_gravityforms-js", defer: true },
+    { src: `${GRAVITYFORMS_JS_URL}/vendor-theme.min.js`, id: "gform_gravityforms_theme_vendors-js", defer: true },
+    { src: `${GRAVITYFORMS_JS_URL}/scripts-theme.min.js`, id: "gform_gravityforms_theme-js", defer: true },
+    { src: `${GRAVITYFORMS_JS_URL}/placeholders.jquery.min.js`, id: "gform_placeholder-js", defer: true },
+    { src: `${GRAVITYFORMS_JS_URL}/vendor-theme.min.js`, id: "gform_gravityforms_theme_vendors-js", defer: true },
+    { src: `${GRAVITYFORMS_JS_URL}/scripts-theme.min.js`, id: "gform_gravityforms_theme-js", defer: true },
 ];
 
 export default function FooterScripts() {

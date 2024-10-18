@@ -1,4 +1,4 @@
-import { fetchPageData } from '../functions/fetchPageData';
+import { fetchPageData } from '../utils/fetchPageData';
 import HtmlContentRenderer from '../components/HtmlContentRenderer';
 
 export async function getStaticProps({ params }) {
