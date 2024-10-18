@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-
+import Head from 'next/head';
 import '../styles/global-styles-inline.css'
 import '../styles/custom.css'
 
@@ -25,7 +25,15 @@ function MyApp({ Component, pageProps }) {
     });
   }, []);
 
-  return <Component {...pageProps} />;
+  return (
+    <>
+      <Head>
+        <title>Greenpeace International</title>
+        <link rel="shortcut icon" type="image/ico" href="https://www.greenpeace.org/international/wp-content/themes/planet4-master-theme/favicon.ico" />
+      </Head>
+      <Component {...pageProps} />
+    </>
+  );
 }
 
 export default MyApp;
