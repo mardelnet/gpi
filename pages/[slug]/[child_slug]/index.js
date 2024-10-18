@@ -1,4 +1,5 @@
-import { useEffect, useState } from 'react';
+import { fetchPageData } from '../../../functions/fetchPageData';
+import HtmlContentRenderer from '../../../components/HtmlContentRenderer';
 
 // Fetch both slugs and child_slugs (nested paths)
 export async function getStaticPaths() {
@@ -27,39 +28,20 @@ export async function getStaticPaths() {
     return { paths, fallback: true };
 }
 
-// Fetch content based on the child_slug (last part of the URL)
 export async function getStaticProps({ params }) {
-    const { child_slug } = params; // Only use child_slug for fetching content
-    const res = await fetch(`https://www.greenpeace.org/international/wp-json/wp/v2/pages?slug=${child_slug}`);
-    const repo = await res.json();
-
-    // Return 404 if no page matches the slug
-    if (!repo || repo.length === 0) {
+    const repo = await fetchPageData(params.child_slug);
+    if (!repo) {
         return {
             notFound: true,
         };
     }
-
     return { props: { repo } };
 }
 
 export default function Page({ repo }) {
-    const [htmlContent, setHtmlContent] = useState(null);
-
-    // Handle content rendering
-    useEffect(() => {
-        if (repo && repo.length > 0) {
-            setHtmlContent(repo[0].content.rendered);
-        }
-    }, [repo]);
-
     return (
         <div>
-            {htmlContent ? (
-                <div dangerouslySetInnerHTML={{ __html: htmlContent }} />
-            ) : (
-                <p>Loading content...</p>
-            )}
+            <HtmlContentRenderer repo={repo} />
         </div>
     );
 }
